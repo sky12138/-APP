@@ -1,0 +1,107 @@
+<ion-view>
+	<ion-content class="stable-bg">
+	    <div class="person_Top">
+	    	<div class="Top_top">
+	    		<a href="#/siginOut" style="text-decoration: none;">
+		    		<button class="button button-clear button-positive">
+					  <span class="ion-ios-gear-outline light Top_topFont"></span>
+					</button>
+				</a>
+				<div class="Top_topImg">
+					<div class="Top_topImg_top">
+						<span class="ion-ios-person stabl"></span>
+					</div>
+					<a href="#/SignIn" style="text-decoration: none;">
+						<button id="User_id" style="color: white;">立即登录</button>
+					</a>
+				</div>
+				<button class="button button-clear button-positive right">
+				   <span class="ion-chatbubble-working light Top_topFont"></span>
+				</button>
+	    	</div>
+	    	<div class="person_TopBottom">
+	    		买家中心
+	    	</div>
+	    </div>
+	    <div class="person_listLog">
+	    	<ul>
+	    		<li>
+	    			<span class="ion-ios-list-outline listLogfont"></span><br />
+	    			<span>预约记录</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-ios-pricetags-outline listLogfont"></span><br />
+	    			<span>砍价记录</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-ios-bell-outline listLogfont"></span><br />
+	    			<span>降价提醒</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-ios-star-outline listLogfont"></span><br />
+	    			<span>收藏车辆</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-ios-bookmarks-outline listLogfont"></span><br />
+	    			<span>订阅车源</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-ios-clock-outline listLogfont"></span><br />
+	    			<span>浏览记录</span>
+	    		</li>
+	    		<li>
+	    			<span class="ion-social-usd-outline listLogfont"></span><br />
+	    			<span>购车贷款</span>
+	    		</li>
+	    	</ul>
+	    </div>
+	    <div class="solePerson">
+	    	<div class="solePerson_top">
+	    		卖家中心
+	    	</div>
+	    	<div class="solePerson_button">
+	    		<span class="ion-ios-pie-outline outlineFont"></span><br />
+	    		<span>卖车进度</span>
+	    	</div>
+	    </div>
+	    <div class="yhq">
+	    	<span class="ion-cash balanced cashFont"></span>
+	    	<span style="margin-left: 1rem; margin-top: -1rem;">我的优惠券</span>
+	    </div>
+	    <div class="yhq">
+	    	<span class="ion-android-contacts balanced cashFont"></span>
+	    	<span style="margin-left: 1rem; margin-top: -1rem;">联系客服</span>
+	    </div>
+	    <div class="yhq" style="margin: 0;">
+	    	<span class="ion-ios-compose-outline balanced cashFont"></span>
+	    	<span style="margin-left: 1rem; margin-top: -1rem;">意见反馈</span>
+	    </div>
+	    <div class="tj">
+	    	<div class="ifms_box twe">
+			<div class="zx1">
+				<br />
+				<hr />
+			</div>
+			<div>
+				为您推荐
+			</div>
+			<div class="zx1">
+				<br />
+				<hr />
+			</div>
+		</div>
+	    </div>
+	    <div class="list" ng-repeat="list_y in ymove">
+		    <a class="item item-thumbnail-left" href="#/gooodes/{{list_y.id}}">
+		      <img ng-src="{{list_y.ico}}">
+		      <h2>{{list_y.name}}</h2>
+		      <p>{{list_y.content}}</p>
+		      <span class="list_xprice">
+	    			{{list_y.price}}
+	    	  </span>
+		    </a>
+		</div>
+	
+	</ion-content>
+</ion-view>
+

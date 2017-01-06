@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>AngularJS基础教程</title>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qL0o7GMAOOdidmDIO1LE85zCq8lrzkRq"></script>
+    <style type="text/css">
+        html,body,#allmap {
+            margin:0px;
+            padding:0px;
+            height:100%;
+            overflow:hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="allmap"></div>
+
+    <script type="text/javascript">
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");
+        var point = new BMap.Point(116.331398, 39.897445);
+        map.centerAndZoom(point, 12);
+        // 创建地址解析器实例
+        var myGeo = new BMap.Geocoder();
+        // 将地址解析结果显示在地图上,并调整地图视野
+        myGeo.getPoint("北京市海淀区上地10街", function (point) {
+            if (point) {
+                map.centerAndZoom(point, 16);
+                map.addOverlay(new BMap.Marker(point));
+            } else {
+                alert("您选择地址没有解析到结果!");
+            }
+        }, "北京市");
+    </script>
+
+</body>
+</html>

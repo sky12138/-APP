@@ -1,0 +1,1104 @@
+/* Empty. Add your own CSS if you like */
+html{
+	font-size: 10px;
+}
+#content_bar{
+	width: 100%;
+	height: 3.5rem;
+	background-color: rgba(60,220,100,0);
+	position: fixed;
+	top: 0;
+	z-index: 6;
+}
+#search{
+	width: 80%;
+	height: 2.7rem;
+	background-color:rgba(255,255,255,1);
+	position:absolute;
+	top: 0.5rem;
+	z-index: 5;
+	left: 10%;
+	display: flex;
+}
+#search div:nth-child(1){
+	width: 25%;
+	height: 100%;
+	color: black;
+	border-right: 1px solid grey;
+	text-align: center;
+	line-height: 2.7rem;
+}
+#search div:nth-child(2){
+	margin-left: 0.5rem;
+	width: 100%;
+	height: 100%
+}
+.car_name{
+	text-align: center;
+}
+.car_name .col{
+	border-left: 1px solid gainsboro;
+	margin-top: 1rem;
+}
+.car_logo{
+	display:inline-block;
+	width: 1.5rem;
+	height: 2rem;
+}
+.logo{
+	background-image: url("../img/ft.jpg");
+	background-size: 100% 100%;
+}
+.logo1{
+	background-image: url("../img/dz.jpg");
+	background-size: 100% 100%;
+}
+.logo2{
+	background-image: url("../img/bt.jpg");
+	background-size: 100% 100%;
+}
+.logo3{
+	background-image: url("../img/ft.jpg");
+	background-size: 100% 100%;
+}
+.logo4{
+	background-image: url("../img/ft1.jpg");
+	background-size: 100% 100%;
+}
+.logo5{
+	background-image: url("../img/xd.jpg");
+	background-size: 100% 100%;
+}
+.logo6{
+	background-image: url("../img/byd.jpg");
+	background-size: 100% 100%;
+}
+.list_show{
+	width: 100%;
+	height: 30rem;
+	background: gainsboro;
+	padding-top:1rem ;
+	position: relative;
+}
+.list_show_title{
+	width: 100%;
+    height: 11%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    font-size: 2rem;
+}
+.scroll_show{
+	width: 100%;
+	height: 75%;
+	background: white;
+	margin-top:0.2rem ;
+}
+.list_imgShow{
+	list-style-type: none;
+	width: 100rem;
+	margin: 0;
+	padding: 0;
+}
+.list_imgShow li{
+	width: 15rem;
+	height: 21rem;
+	float: left;
+	margin-left: 1rem;
+	overflow: hidden;
+	box-shadow: 5px 5px 20px gray;
+}
+.list_imgShow li img{
+	width: 15rem;
+	height: 12rem;
+}
+.list_xcontent{
+	color: gray;
+	font-size: 1rem;
+}
+.list_xprice{
+	color: red;
+	font-size: 1.5rem;
+}
+#text_move{
+	width: 100%;
+	height: 3rem;
+	background-color: white;
+	margin-top: 0.5rem;
+	line-height: 3rem;
+	display: flex;
+}
+.v-tit {
+	margin-right: 0;
+	width: 30%;
+    font-size: 2.2rem;
+    color: #000;
+}
+.v-tit span{
+	color: darkgreen;
+}
+#box_listMove{
+	width: 70%;
+	height: 3rem;
+	overflow: hidden;
+	/*background-color: greenyellow;*/
+	line-height: 3rem;
+	text-align: center;
+}
+#four_box{
+	width: 100%;
+	height: 20rem;
+	background-color: gray;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	
+}    
+.four_boxMin{
+	width: 49%;
+	height: 49%;
+	background-color: white;
+	display: flex;
+}		
+.four_boxMin_left{
+	width: 50%;
+	text-align: center;
+	padding-top: 1rem;
+}
+.four_boxMin_left p{
+	font-size: 2rem;
+	font-weight: bold;
+}	
+.four_boxMin_left span{
+	color: gray;
+}
+.four_boxMin_right{
+	width: 50%;
+	height: 100%;
+	position: relative;
+}	
+.four_boxMin_right img{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70%;
+}
+
+/************************buy_car*****************************/
+.bar-light{
+	padding: 0;
+	flex-wrap: wrap;
+}
+.stableTop{
+	width: 100%;
+	height: 100%;
+}
+.bar-light{
+	border: none;
+}
+.location{
+	text-align: center;
+	line-height: 2.5rem;
+}
+.col{
+	height: 100%;
+	padding: 0;
+}
+.card, .list-inset {
+    margin:0;
+}
+.item-input{
+	padding: 0 0 0 0.4rem;
+}
+#buy_nav{
+	width: 100%;
+	height: 5rem;
+}
+#buy_nav ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+}
+#buy_nav ul li{
+	height: 3.2rem;
+	line-height: 3.2rem;
+	text-align: center;
+}
+.light-bg{
+	margin-top: 3rem;
+}
+.list{
+	margin: 0;
+}
+.list .goods_price{
+	font-size: 2rem;
+	color: red;
+	margin-top: 1rem;
+}
+/************************卖车********************************/
+.phone_size{
+	font-size: 3.5rem;
+}
+.bar .title + .button:last-child, .bar > .button + .button:last-child, .bar > .button.pull-right, .bar .buttons.pull-right, .bar .title + .buttons {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    bottom: 5px;
+}
+#sole_showImg{
+	width: 100%;
+}
+#sole_showImg img{
+	width: 100%;
+}
+#bottom_bg{
+	width: 100%;
+	background-color: gainsboro;
+}
+.Information{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.ifms_box{
+	width:90%;
+	height: 4rem;
+	margin-top: 0.1rem;
+	line-height: 4rem;
+	
+}
+#number_user{
+	font-size: 2rem;
+	color: green;
+}
+.button.button-block, .button.button-full {
+     margin-top: 0; 
+     margin-bottom: 0;
+}
+.button_cg{
+	margin-left: 15%;
+}
+.twe{
+	display: flex;
+	justify-content: space-around;
+}
+.zx{
+	width: 40%;
+	height: 70%;
+	margin-top: 1rem;
+	line-height:250%;
+	background-color: gainsboro;
+	text-align: center;
+}
+.zx1{
+	width: 30%;
+	line-height:1.4rem;
+}
+#lc{
+	width: 100%;
+	height: 10rem;
+	background-color: white;
+	margin-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.lc_top{
+	width: 95%;
+	height: 30%;
+	line-height: 3rem;
+	font-weight: bold;
+	border-bottom: 1px solid gainsboro;
+}
+.lc_content{
+	width: 95%;
+	height: 70%;
+}
+#lc_list{
+	list-style-type:none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+#lc_list li{
+	width: 16%;
+	height: 100%;
+	text-align: center;
+	line-height: 5rem;
+	font-size: 3rem;
+	color: green
+}
+#lc_list .list_bar{
+	width: 10%;
+}
+.lc_listBox{
+	width: 100%;
+	height: 50%;
+	border-radius: 50%;
+	background-color: gainsboro;
+	margin-top: 1rem;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 3rem;
+	color: green
+}
+.lc_listFont{
+	font-size: 1rem;
+	color: black;
+	line-height: 1rem;
+	margin-top: 0.5rem;
+}
+.big_showImg{
+	width: 100%;
+	margin-top: 1rem;
+	background-color:#fcfcf3;
+}
+.showImg_box{
+	width: 100%;
+	height: 25%;
+	padding-top: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.showImg_boxtxt{
+	width: 90%;
+	height: 30%;
+	text-align: center;
+	font-size: 1rem;
+	color: gainsboro;
+}
+.showImg_boxtxt span{
+	font-size: 2rem;
+	color: #e4733b;
+	font-weight: bold;
+}
+.showImg_boximg{
+	width: 90%;
+	height: 70%;
+	text-align: center;
+}
+.showImg_boximg img{
+	width: 60%;
+
+}
+.solecar_zn{
+	width: 100%;
+	margin-top: 1rem;
+	background-color:white;
+}
+.solecar_zn div:nth-child(1){
+	width: 100%;
+	height: 3rem;
+	border-bottom:  1px solid grey;
+	line-height: 3rem;
+	padding-left: 1rem;
+	font-weight: bold;
+}
+.solecar_zn div:nth-child(2) ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.solecar_zn div:nth-child(2) ul li{
+	width: 100%;
+	height: 3rem;
+	border-bottom:  1px solid grey;
+	line-height: 3rem;
+	margin-left: 1rem;
+	padding-right: 1.5rem;
+}
+.list_Q{
+	color: lawngreen;
+}
+.ion-ios-arrow-down{
+	float: right;
+}
+.sole_bottom{
+	width: 100%;
+	margin-top: 0.5rem;
+	padding-top: 0.5rem;
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/************************个人中心*****************************/
+.person_Top{
+	width: 100%;
+	height: 15rem;
+	background-color: white;
+	overflow: hidden;
+}
+.Top_top {
+    width: 150%;
+    height: 72%;
+    margin-left: -25%;
+    background-color: green;
+    border-radius: 0 0 45% 45%;
+    padding: 0 25% 0 25%;
+    position: relative;
+}
+.right{
+	float: right;
+}
+.Top_topFont{
+	font-size: 3rem;
+}
+.Top_topImg{
+	width: 25%;
+    height: 74%;
+    position: absolute;
+    top: 0;
+    left: 38%;
+    margin-top: 3%;
+    text-align: center;
+}
+.Top_topImg_top{
+	width: 60%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 6rem;
+    overflow: hidden;
+}
+.stabl{
+	color: darkgray;
+}
+.person_TopBottom{
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 2rem;
+}
+.person_listLog{
+	width: 100%;
+	height: 10rem;
+	background-color: white;
+	margin-top: 2px;
+}
+.person_listLog ul{
+	width: 100%;
+	height: 100%;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.person_listLog ul li{
+	width: 25%;
+	height: 50%;
+	text-align: center;
+}
+.listLogfont{
+	font-size: 2.5rem;
+}
+.solePerson{
+	width: 100%;
+	height: 8rem;
+	background-color: white;
+	margin-top: 1rem;
+}
+.solePerson_top{
+	width: 100%;
+	height: 40%;
+	border-bottom: 1px solid gainsboro;
+	line-height: 3.2rem;
+	font-weight: bold;
+}
+.solePerson_button{
+	width: 25%;
+	height: 60%;
+	text-align: center;
+}
+.outlineFont{
+	font-size: 2.5rem;
+}
+.yhq{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	background: white;
+	margin-top: 1rem;
+	padding-left: 1rem;
+}
+.cashFont{
+	font-size: 2rem;
+}
+.tj{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+/********************商品详情****************************/
+#Back_top{
+	width: 100%;
+	height: 4.4rem;
+	background-color: rgba(255,255,255,0);
+	position: fixed;
+	z-index: 20;
+	border-bottom: none;
+}
+#Back_top span {
+    float: right;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-right: 1rem;
+}
+.goodes_Img{
+	width: 100%;
+	background-color: white;
+}
+.goodes_Img img{
+	max-width: 100%;
+	min-width: 100%;
+	margin: 0 auto;
+}
+.goodes_main{
+	width: 100%;
+	background-color: darkgrey;
+	padding-bottom: 1rem;
+}
+.Car_information{
+	width: 100%;
+	background-color: white;
+}
+.Car_goodesName{
+	widows: 80%;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-left: 1rem;
+}
+.name_span{
+	width: 50%;
+	display:  flex;
+	
+}
+.name_span span{
+	display: block;
+	text-align: center;
+	color:gainsboro ;
+	width: 3rem;
+	height: 2rem;
+	border: 1px solid gainsboro;
+	border-radius: 2px;
+	margin-left: 1rem;
+	font-size: 1rem;
+}
+.price_box{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	padding-top: 0.5rem;
+	display: flex;
+	justify-content: space-around;
+}
+.price_box div:nth-child(1){
+	margin-left: 1rem;
+	font-weight: bold;
+	font-size: 2.9rem;
+	color: orangered;
+}
+.price_box div:nth-child(2){
+	margin-left: 5px;
+	color: gray;
+	margin-top: 0.6rem;
+}
+.price_box div:nth-child(3){
+	margin-left: 5px;
+	font-size: 1rem ;
+	text-align: right;
+	color: green;
+	margin-top: 0.6rem;
+}
+.d_bar{
+	width: 100%;
+}
+.d_bar div{
+	width: 90%;
+	height: 3rem;
+	background-color: darkgray;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 1.5rem;
+	line-height: 3rem;
+}
+.d_bar div span:nth-child(1){
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	margin-top: 0.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-left: 5px;
+}
+.d_bar div span:nth-child(3){
+	width: 28%;
+	color: green;
+	text-align: right;
+}
+.buy_service{
+	width: 90%;
+	margin: 0 auto;
+	height: 10rem;
+	margin-top: 0.5rem;
+}
+.buy_service div:nth-child(1){
+	width: 100%;
+	height: 30%;
+	line-height: 250%;
+}
+.buy_service div:nth-child(1) span:nth-child(2){
+	color: orangered;
+}
+.buy_service div:nth-child(2){
+	width: 100%;
+	height: 40%;
+}
+.buy_service div:nth-child(2) ul{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.buy_service div:nth-child(2) ul li{
+	width: 50%;
+}
+.buy_service div:nth-child(3){
+	width: 100%;
+	height: 30%;
+	line-height: 250%;
+}
+.Car_content{
+	width: 100%;
+	margin-top: 1rem;
+	background-color: white;
+}
+.Car_content div:nth-child(1){
+	width: 90%;
+	margin: 0 auto;
+}
+.Car_content div:nth-child(1) ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.Car_content div:nth-child(1) ul li:nth-child(1){
+	width: 100%;
+	margin-top: 0.5rem;
+}
+.Car_content div:nth-child(1) ul li:nth-child(2){
+	width: 33.3%;
+	margin-top: 0.5rem;
+}
+.Car_content div:nth-child(1) ul li:nth-child(3){
+	width: 33.3%;
+	margin-top: 0.5rem;
+}
+.Car_content div:nth-child(1) ul li:nth-child(4){
+	width: 33.3%;
+	margin-top: 0.5rem;
+}
+.Content_box{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	margin-top: 1rem;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+.Content_box div{
+	width: 50%;
+}
+.Content_top{
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.Content_top2{
+	font-size: 0.5rem;
+	color: darkgray;
+}
+.imgFont{
+	font-size: 4rem;
+	color: greenyellow;
+}
+.more_information{
+	width: 100%;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+}
+.Car_master{
+	width: 100%;
+	margin-top: 1rem;
+	background-color: white;
+}
+.master_name{
+	width: 90%;
+	height: 5rem;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+.master_name div{
+	margin-top: 1rem;
+}
+.master_name div:nth-child(1){
+	width: 3rem;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	border-radius: 50%;
+	background-color: gainsboro;
+}
+.master_name div:nth-child(1) span{
+	font-size: 3rem;
+}
+.master_name div:nth-child(2){
+	width: 40%;
+	height: 3rem;
+}
+.zxlc{
+	width: 40%;
+	height: 3rem;
+	color: white;
+}
+.zxlc span{
+	display: block;
+	width: 6rem;
+	height: 3rem;
+    background-color: orange;
+    line-height: 3rem;
+    text-align: center;
+    float: right;
+}
+.master_intriduse{
+	width: 90%;
+	margin: 0 auto;
+}
+.master_intriduse span{
+	font-size: 3rem;
+	color: gray;
+}
+.master_time{
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+	margin-top: 1rem;
+}
+.master_time ul{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	margin-bottom: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.master_time ul li{
+	margin-top: 1rem;
+	font-size: 1rem;
+	width: 50%;
+}
+.master_price{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+.m_pie{
+	width: 25%;
+	height: 4rem;
+	margin-top: 1rem;
+}
+.m_pie span{
+	color: orange;
+}
+.m_ipt{
+	width: 70%;
+	height: 4rem;
+	margin-top: 1rem;
+	display: flex;
+}
+.m_ipt input{
+	width: 60%;
+	border: 1px solid gray;
+	height: 70%;
+}
+.m_ipt div{
+	width: 40%;
+    height: 70%;
+    text-align: center;
+    line-height: 2.9rem;
+    background-color: orange;
+    color: white;
+}
+.jiance{
+	width: 100%;
+	margin-top: 0.5rem;
+	background-color: white;
+}
+.jinance_top{
+	width: 100%;
+	height: 3rem;
+	border-bottom: 1px solid gray;font-weight: bold;
+	padding-left: 1rem;
+	line-height: 3rem;
+}
+.jcs{
+	width: 100%;
+	height: 7rem;
+	display: flex;
+}
+.jcs div:nth-child(1){
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	border-radius: 50%;
+	background-color: greenyellow;
+	overflow: hidden;
+}
+.jcs div{
+	margin-left: 1rem;
+	margin-top: 5px;
+}
+.jcs div:nth-child(1) span{
+	font-size: 4rem;
+}
+.jcs div:nth-child(2){
+	width: 50%;
+	height: 4.5rem;
+	color: gray;
+}
+.jcs div:nth-child(3){
+	width: 30%;
+	height: 5rem;
+	text-align: center;
+	line-height: 5rem;
+	color: red;
+	font-size: 2rem;
+	font-weight: bold;
+}
+.jc_ph{
+	display: block;
+	width: 50%;
+	height: 2rem;
+	background-color: orangered;
+	color: white;
+	text-align: center;
+}
+.jcs_content{
+	width: 90%;
+	margin: 0 auto;
+	border-top: 1px solid gray;
+	padding-top: 1rem;
+}
+.jcs_contentS{
+	font-size: 1rem;
+	color: darkgrey;
+}
+.jc_list{
+	width: 100%;
+	margin-top: 1rem;
+}
+.jc_list ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	width: 90%;
+	margin: 0 auto;
+}
+.jc_list ul li{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	border-bottom: 1px solid gray;
+}
+.right_jc{
+	float: right;
+}
+.jc_listbuttom{
+	width: 100%;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: gray;
+}
+.baozhang{
+	width: 100%;
+	height: 7rem;
+	margin-top: 1rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	padding-top: 1rem;
+}
+.bzfont{
+	font-size: 3rem;
+	color: green;
+}
+.Img_mainShow{
+	width: 100%;
+	background-color: white;
+	margin-top: 1rem;
+}
+.Img_Box{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 1rem;
+}
+.footer_size{
+	text-align: center;
+	line-height: 2.5;
+	color: white;
+}
+.footer_col{
+	text-align: center;
+}
+.footer_col span:nth-child(1){
+	font-size: 1.5rem;
+}
+.fot_sz{
+	font-size: 0.5rem;
+	color: gray;
+}
+/***********************登录页******************************/
+.signIn_top{
+	width:100%;
+	height: 3rem;
+	line-height: 3rem;
+	color: gray;
+	padding-left: 1rem;
+	font-size: 1rem;
+}
+.signIn_main{
+	width: 100%;
+	height: 10rem;
+	background-color: white;
+}
+.signIn_number,.signIn_qrma{
+	width: 100%;
+	height: 40%;
+	line-height: 3;
+	margin: 0 auto;
+	border-bottom: 1px solid gainsboro;
+	display: flex;
+}
+.s{
+	padding: 0 1rem 0 1rem;
+}
+.number_ipt{
+	display: flex;
+}
+.number_ipt div:nth-child(1){
+	width: 69%;
+	height: 100%;
+	border-left: 1px solid gainsboro;
+}
+.number_ipt div:nth-child(1) input{
+
+	margin-left: 0.5rem;
+}
+.number_ipt button{
+   width: 35%;
+    height: 98%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    margin-top: 0rem;
+    line-height: 2;
+    font-size: 1rem;
+    border: none;
+}
+.signIn_qrma div:nth-child(1){
+	border-right: 1px solid gainsboro;
+}
+.signIn_qrma div:nth-child(2) input{
+	width: 100%;
+	height: 100%;
+	line-height: 3;
+}
+.signIn_into{
+	width: 100%;
+	height: 38%;
+	display: flex;
+	justify-content: space-around;
+}
+.it_but{
+	width: 90%;
+	margin: 0 auto;
+}
+#User_id{
+	background-color: green;
+	border: none;
+}
+/**********************设置页面*****************************/
+.button.button-positive {
+    background-color: white;
+    color: black; 
+}
+.button.button-positive.activated{
+	background-color: white;
+	border: none;
+}
+/*.button.button-block, .button.button-full {
+    margin-top: 60px;
+}*/
+#sigin_out{
+	display: none;
+}
+/***********************适配*******************************/
+@media (min-width: 768px) and (max-width: 1024px) {
+	html {
+	    font-size: 14px;
+	}
+	.list_show_title {
+	    height: 13%;
+	}
+	.four_boxMin_right img {
+	    position: absolute;
+	    bottom: 0;
+	    width: 85%;
+	    height: 100%;
+	}
+	#four_box {
+	    height: 24rem;
+	}
+	.Top_topImg {
+	    width: 15%;
+	    height: 91%;
+	    position: absolute;
+	    top: 0;
+	    left: 43%;
+	    margin-top: 1%;
+	    text-align: center;
+	}
+	.Top_topImg_top{
+		 margin-bottom: 3%;
+	}
+}

@@ -1,0 +1,277 @@
+﻿
+======================================================
+******************* API 文档 *************************
+======================================================
+
+
+
+根据用户ID获取指定用户的数据
+/api/users/get
+method: GET
+params:
+	id: int，要取得的用户的ID
+result:
+	err: 0:成功；404:用户不存在；
+	[ data ]: object
+		id: 用户ID
+		name: 用户名
+		pass: 密码
+		age: 年龄
+		ico: 图像URL
+		en_name: 英文名
+		money: 金钱
+
+
+=====================================================
+
+
+取得所有用户的数据
+/api/users/gets
+method: GET
+params:
+	无
+result:
+	err: 0:成功；
+	[ data ]: array
+		[___]
+			id: 用户ID
+			name: 用户名
+			pass: 密码
+			age: 年龄
+			ico: 图像URL
+			en_name: 英文名
+			money: 金钱
+
+
+=====================================================
+
+
+新增用户
+/api/users/add
+method: POST
+params:
+	name: string，用户名
+	[ pass ]: string,密码
+	[ age ]: int，年龄
+	[ ico ]: string，图像URL
+	[ en_name ]: string，英文名
+	[ money ]: int，金钱
+result:
+	err: 0:成功；100:参数不正确；101:用户名已存在；
+	[ id ]: 新增用户的ID
+
+
+======================================================
+
+
+修改用户数据
+/api/users/update
+method: POST
+params:
+	id: int，被修改的用户的ID
+	age: int，修改后的年龄
+result:
+	err: 0:成功；100:参数不正确；404:用户不存在；
+
+
+=======================================================
+
+
+删除指定的用户
+/api/users/remove
+method: POST
+params:
+	id: int，被删除的用户的ID
+result:
+	err: 0:成功；
+
+
+
+
+=====================================================
+
+
+
+上传文件
+/api/upload
+method: POST
+params:
+	f: 上传文件的文件流
+result:
+	status: 状态。'0'：成功；401：参数错误 
+	imgUrl: 文件上传到服务器后的URL地址
+
+
+=====================================================
+
+
+
+
+
+
+根据商品ID获取指定商品的数据
+/api/goods/get
+method: GET
+params:
+	id: int，要取得的商品的ID
+result:
+	err: 0:成功；404:商品不存在；
+	[ data ]: object
+		id: 商品ID
+		name: 商品名
+		price: 价格
+		ico: 图像URL
+		content: 商品的详情描述内容
+
+
+
+
+
+=====================================================
+
+
+
+
+取得所有商品的数据
+/api/goods/gets
+method: GET
+params:
+	无
+result:
+	err: 0:成功；
+	[ data ]: array
+		[___]
+			id: 商品ID
+			name: 商品名
+			price: 价格
+			ico: 图像URL
+			content: 商品的详情描述内容
+
+
+
+=====================================================
+
+
+新增商品
+/api/goods/add
+method: POST
+params:
+	name: string，商品名
+	price: int,价格
+	ico: string，图像URL
+	content: string, 商品的详情描述内容
+result:
+	err: 0:成功；100:参数不正确；
+	[ id ]: 新增商品的ID
+
+
+
+
+=====================================================
+
+
+修改商品
+/api/goods/update
+method: POST
+params:
+	id: int, 被修改的商品的ID
+	name: string，修改后的商品名
+	price: int,修改后的价格
+	ico: string，修改后的图像URL
+	content: string, 修改后商品的详情描述内容
+result:
+	err: 0:成功；100:参数不正确；404:指定的商品不存在
+
+
+=====================================================
+
+
+分页获取商品，每页三条数据
+/api/goods/get_of_page
+method: GET
+params:
+	pidx: int, 页码
+result:
+	err: 0:成功；
+	data: object
+		over: boolean，是否最后一页
+		lst: array, 商品列表
+			[___]
+				id: 商品ID
+				name: 商品名
+				price: 价格
+				ico: 图像URL
+				content: 商品的详情描述内容
+
+
+=====================================================
+
+
+删除商品
+/api/goods/remove
+method: POST
+params:
+	id: int, 商品的ID
+result:
+	err: 0:成功；
+
+
+
+
+
+======================================================
+************** REST API 文档 *************************
+======================================================
+
+
+/rest/users/:id
+method: GET
+	如果有 :id
+		根据 id 取得用户的数据
+		params:
+			无
+		result: object
+			err: 0:成功；404:用户不存在；
+			data: object
+				id: 用户ID
+				name: 用户名
+				pass: 密码
+				age: 年龄
+				ico: 图像URL
+				en_name: 英文名
+				money: 金钱
+	如果没有 :id
+		取得所有用户的数据
+		params:
+			无
+		result: array
+			[___]
+				id: 用户ID
+				name: 用户名
+				pass: 密码
+				age: 年龄
+				ico: 图像URL
+				en_name: 英文名
+				money: 金钱
+method: POST
+	如果有 :id
+		修改指定用户的数据
+		params:
+			pass: string，新的密码
+			age: int，新的年龄
+			ico: string，新的图像URL
+			en_name: string，新的英文名
+			money: int，新的金钱
+		result: object
+			err: 0:成功；404:用户不存在
+	如果没有 :id
+		新增用户
+		params:
+			name: string，用户名
+			[ pass ]: string，密码
+			[ age ]: int，年龄
+			[ ico ]: string，图像URL
+			[ en_name ]: string，英文名
+			[ money ]: int，金钱
+		result: object
+			err: 0:成功；100:参数不正确；101:用户名已存在；

@@ -1,0 +1,207 @@
+<ion-view>
+	<!--头部-->
+	<ion-header-bar class="bar bar-header">
+	  <div class="h1 title">我要卖车</div>
+	  <button class="button button-clear button-positive">
+	  	<span class="ion-ios-telephone-outline balanced phone_size"></span>
+	  </button>
+	</ion-header-bar>
+    <!--主体-->
+	<ion-content>
+		<div id="sole_showImg">
+			<img src="img/show02.png" />
+		</div>
+		<!--灰色底部-->
+		<div id="bottom_bg">
+			<div class="Information">
+				<div class="ifms_box">
+					<span id="number_user">5750756</span><span>位车主提交了卖车申请</span>
+				</div>
+				<div class="ifms_box">
+					<div class="list list-inset">
+					  <label class="item item-input">
+					    <input type="text" placeholder="请输入手机号" ng-model="soleUser.number" ng-blur="textNumber()">
+					    <span style="color: red;" ng-if="hmshow">号码有误！</span>
+					  </label>
+					 
+					</div>
+				</div>
+				<div class="ifms_box">
+					<button class="button button-full button-balanced">
+					  	预约卖车
+					</button>
+				</div>
+				<div class="ifms_box twe">
+					<div class="zx">
+						免费咨询
+					</div>
+					<div class="zx">
+						爱车估价
+					</div>
+				</div>
+				<div class="ifms_box twe">
+					<div class="zx1">
+						<br />
+						<hr />
+					</div>
+					<div>
+						查看卖车进度
+					</div>
+					<div class="zx1">
+						<br />
+						<hr />
+					</div>
+				</div>
+			</div>
+		    <div id="lc">
+		    	<div class="lc_top">
+		    		卖车流程
+		    	</div>
+		    	<div class="lc_content">
+		    		<ul id="lc_list">
+		    			<li>
+		    				<div class="lc_listBox ">
+		    					<span class="ion-clipboard"></span>
+		    				</div>
+		    				<div class="lc_listFont">
+		    					提交信息
+		    				</div>
+		    			</li>
+		    			<li class="list_bar">
+		    				<span class="ion-ios-pulse"></span>
+		    			</li>
+		    			<li>
+		    				<div class="lc_listBox ">
+		    					<span class="ion-android-home"></span>
+		    				</div>
+		    				<div class="lc_listFont">
+		    					上门服务
+		    				</div>
+		    			</li>
+		    			<li class="list_bar">
+		    				<span class="ion-ios-pulse"></span>
+		    			</li>
+		    			<li>
+		    				<div class="lc_listBox ">
+		    					<span class="ion-android-car"></span>
+		    				</div>
+		    				<div class="lc_listFont">
+		    					买家看车
+		    				</div>
+		    			</li>
+		    			<li class="list_bar">
+		    				<span class="ion-ios-pulse"></span>
+		    			</li>
+		    			<li>
+		    				<div class="lc_listBox ">
+		    					<span class="ion-social-yen"></span>
+		    				</div>
+		    				<div class="lc_listFont">
+		    					交易过户
+		    				</div>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="big_showImg">
+		    	<div class="showImg_box">
+    				<div class="showImg_boxtxt">
+			            <span>直面个人买家 好车卖出好价</span><br>
+	            		拒绝黄牛车商，避免重重压价，每车多卖20%
+			        </div>
+		    	
+		    		<div class="showImg_boximg">
+		    			<img src="img/sole01.png"/>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="showImg_box">
+    				<div class="showImg_boxtxt">
+			            <span>一站式上门服务 全程免费</span><br>
+            			登记车辆，建议售价，找买家，帮过户，全部帮你搞定
+			        </div>
+		    	
+		    		<div class="showImg_boximg">
+		    			<img src="img/sole02.png"/>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="showImg_box">
+    				<div class="showImg_boxtxt">
+			            <span>海量买家 极速成交</span><br>
+	            		每天超过百万人次浏览，平均一周即可成交
+			        </div>
+		    	
+		    		<div class="showImg_boximg">
+		    			<img src="img/sole03.png"/>
+		    		</div>
+		    	</div>
+		    	
+		    	<div class="showImg_box">
+    				<div class="showImg_boxtxt">
+			            <span>无需寄存 边开边卖</span><br>
+	            		不用寄存车辆，开着爱车，直到交易成功
+			        </div>
+		    	
+		    		<div class="showImg_boximg">
+		    			<img src="img/sole04.png"/>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="solecar_zn">
+		    	<div>
+		    		卖车指南
+		    	</div>
+		    	<div>
+		    		<ul>
+		    			<li>
+		    				<span class="list_Q">Q1</span>
+		    				瓜子二手车直卖网是谁？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    			<li>
+		    				<span class="list_Q">Q2</span>
+		    				出售车辆需要符合什么样的条件？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    			<li>
+		    				<span class="list_Q">Q3</span>
+		    				卖车流程是怎么样的？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    			<li>
+		    				<span class="list_Q">Q4</span>
+		    				卖车需要准备什么？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    			<li>
+		    				<span class="list_Q">Q5</span>
+		    				大概多久能成交？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    			<li>
+		    				<span class="list_Q">Q6</span>
+		    				是否收取费用？
+		    				<span class="ion-ios-arrow-down"></span>
+		    			</li>
+		    		</ul>
+		    	</div>
+		    </div>
+		    <div class="sole_bottom">
+		    	<div class="ifms_box">
+					<div class="list list-inset">
+					  <label class="item item-input">
+					    <input type="text" placeholder="请输入手机号" ng-model="soleUser.number" ng-blur="textNumber()">
+					    <span style="color: red;" ng-if="hmshow">号码有误！</span>
+					  </label>
+					</div>
+				</div>
+				<div class="ifms_box">
+					<button class="button button-full button-balanced">
+					  	预约卖车
+					</button>
+				</div>
+		    </div>
+		</div>
+	</ion-content>
+</ion-view>

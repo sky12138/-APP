@@ -1,0 +1,60 @@
+<ion-view>
+	<ion-header-bar class="bar-light">
+		<div class="stable-bg stableTop row">
+			<div class="col location">
+				<span class="ion-ios-location-outline"></span>
+				<span>
+					深圳
+				</span>
+			</div>
+			<div class="col col-60 list list-inset listchang">
+			  <label class="item item-input">
+			    <i class="icon ion-search placeholder-icon"></i>
+			    <input type="text" placeholder="Search">
+			  </label>
+			</div>
+			<div class="col" style="text-align: right; font-size: 3rem;">
+				<span class="ion-android-apps"></span>
+			</div>
+		</div><br />
+		<div id="buy_nav">
+			<ul>
+				<li>
+					智能排序
+					<span class="ion-chevron-down"></span>
+				</li>
+				<li>
+					品牌
+					<span class="ion-chevron-down"></span>
+				</li>
+				<li>
+					价格
+					<span class="ion-chevron-down"></span>
+				</li>
+				<li>
+					筛选
+					<span class="ion-chevron-down"></span>
+				</li>
+				<li>
+					<span class="ion-ios-book balanced"></span>
+					订阅
+				</li>
+			</ul>
+	    </div>
+	</ion-header-bar>
+	<ion-content class="light-bg" has-header delegate-handle="buy_main">
+		<ion-refresher pulling-text="下拉刷新" spinner="android" class="stable-bg"  on-refresh="getData_down()"></ion-refresher>
+		
+		<div class="list" ng-repeat="goodsArry in goods_arry">
+		    <a class="item item-thumbnail-left" href="#/gooodes/{{goodsArry.id}}">
+		      <img ng-src="{{host}}{{goodsArry.ico}}" />
+		      <h2>{{goodsArry.name}}</h2>
+		      <p>{{goodsArry.content}}</p>
+		      <p class="goods_price">{{goodsArry.price}}</p>
+		    </a>
+		</div>
+		<ion-infinite-scroll on-infinite="getData()" immediate-check="true" spinner="android" ng-if="show"></ion-infinite-scroll>
+		
+		
+	</ion-content>
+</ion-view>

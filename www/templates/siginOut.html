@@ -1,0 +1,33 @@
+<ion-view>
+	<!--头部-->
+    <ion-nav-bar class="bar-light">
+		<ion-nav-back-button></ion-nav-back-button>
+		<ion-nav-title>
+ 			<span style="font-weight: bold;">设置</span>
+ 	    </ion-nav-title>
+	</ion-nav-bar>
+	
+	<ion-content class="stable-bg">
+		<div class="list">
+		  <div class="item item-button-right">
+		  	 清除缓存
+		    <button class="button button-positive">
+		      <i class="icon ion-chevron-right"></i>
+		    </button>
+		  </div>
+		  <div class="item item-button-right">
+		  	 关于瓜子
+		    <button class="button button-positive">
+		      <i class="icon ion-chevron-right"></i>
+		    </button>
+		  </div>
+		</div>
+		<!--退出按钮-->
+		<!--<a href="#/siginOut" style="text-decoration: none;">-->
+		<button class="button button-full button-positive" id="sigin_out" ng-click="user_out()">
+		 	退出登录
+		</button>
+<!--		</a>-->
+		
+	</ion-content>
+</ion-view>

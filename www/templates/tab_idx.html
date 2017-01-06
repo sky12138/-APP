@@ -1,0 +1,171 @@
+<ion-view>
+	<div id="content_bar">
+			<div id="search">
+				<div>
+					深圳
+					<span class="ion-chevron-down"></span>
+				</div>
+				<div>
+	    			<input type="search" placeholder="Search" style="background-color:rgba(253,254,254,0.8);width: 100%;height: 100%;padding: 0;">
+				</div>
+			</div>
+	    </ion-header-bar>
+	</div>
+	<ion-content on-scroll="getTop()">
+		<ion-slide-box does-continue="true" auto-play='true'>
+			<ion-slide>
+				<div class="box" style="height:20rem;">
+					<img ng-src="{{arry[0]}}" style="width:100%;height: 100%;"/>
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="box" style="height:20rem;">
+					<img ng-src="{{arry[1]}}" style="width:100%;height: 100%"/>
+				</div>
+			</ion-slide>
+			<ion-slide>
+				<div class="box" style="height:20rem;">
+					<img ng-src="{{arry[2]}}" style="width:100%;height: 100%"/>
+				</div>
+			</ion-slide>
+		</ion-slide-box>
+		<div class="row" style="margin-left: 5%;">
+		  <button class="button button-balanced col-40" style="font-size: 20px;" ng-click="To_buypage()">
+			  我要买车
+		  </button>
+		  <button class="button button-balanced col-40 col-offset-10" style="background-color: greenyellow;font-size: 20px;" ng-click="To_solepage()">
+			  免费卖车
+		  </button>
+		</div>
+		<div class="car_name">
+			<div class="row">
+			  <div class="col" style="border-left: none">5万以下</div>
+			  <div class="col">5-10万</div>
+			  <div class="col">10-15万</div>
+			  <div class="col">15-20</div>
+			</div>
+			<div class="row">
+			  <div class="col" style="border-left: none">准新车</div>
+			  <div class="col">练手车</div>
+			  <div class="col">可迁全国</div>
+			  <div class="col">急售</div>
+			</div>
+			<div class="row">
+			  <div class="col" style="border-left: none">
+			    <span class="car_logo logo"></span>
+			  		丰田
+			    </div>
+			  <div class="col">
+			  	<span class="car_logo logo1"></span>
+			  		大众
+			    </div>
+			  <div class="col">
+			  	<span class="car_logo logo2"></span>
+			  		本田
+			    </div>
+			  <div class="col">
+			  	<span class="car_logo logo3"></span>
+			  		日产
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col" style="border-left: none">
+			  	<span class="car_logo logo4"></span>
+			  		福特
+			    </div>
+			  <div class="col">
+			  	<span class="car_logo logo5"></span>
+			  		现代
+			  	</div>
+			  <div class="col">
+			  	<span class="car_logo logo6"></span>
+			  		比亚迪
+			  	</div>
+			  <div class="col">
+			  	全部
+			  	<span class="ion-android-arrow-dropright-circle balanced"></span>
+			  </div>
+			</div>
+
+		</div>
+		<div class="list_show">
+			<div class="list_show_title">
+				<span>
+					好车推荐
+				</span>
+				<span ng-click="To_buypage()">
+					全部推荐
+					<span class="ion-chevron-right"></span>
+				</span>
+			</div>
+	    	<ion-scroll class="scroll_show" direction="x" scrollbar-x="false" delegate-handle="scroll0">
+	    		<ul class="list_imgShow">
+	    			<li ng-repeat="list_x in Xmove">
+	    				<a href="#/gooodes/{{list_x.id}}" style="text-decoration: none">
+		    				<img ng-src="{{list_x.ico}}"/>
+		    				<div style="padding: 0 0.5rem;">
+		    				<span style="font-size: 1rem;margin: 0;">
+		    					{{list_x.name}}
+		    				</span><br />
+		    				<span class="list_xcontent">
+		    					{{list_x.content}}
+		    				</span><br />
+		    				<span class="list_xprice">
+		    					{{list_x.price}}
+		    				</span>
+		    				</div>
+	    				</a>
+	    			</li>
+	    		</ul>
+	    	</ion-scroll>
+	    	<div id="text_move">
+	    		<div class="v-tit">
+	    			瓜子
+	    			<span>精选</span>
+	    		</div>
+	    		<div id="box_listMove">
+	    			精选好车好文，给找车添点乐趣
+	    		</div>
+	    	</div>
+	    </div>
+		<div id="four_box">
+			<div class="four_boxMin" ng-click="To_buypage()">
+				<div class="four_boxMin_left">
+					<p>今日超值</p>
+					<span>评估师推荐</span>
+				</div>
+				<div class="four_boxMin_right">
+					<img src="img/jrcz.jpg"/>
+				</div>
+			</div>
+			<div  class="four_boxMin" ng-click="To_buypage()">
+				<div class="four_boxMin_left">
+					<p>准新车</p>
+					<span>新车二手价</span>
+				</div>
+				<div class="four_boxMin_right">
+					<img src="img/zxc.jpg"/>
+				</div>
+			</div>
+			<div  class="four_boxMin" ng-click="To_buypage()">
+				<div class="four_boxMin_left">
+					<p>练手车</p>
+					<span>5万块好车</span>
+				</div>
+				<div class="four_boxMin_right">
+					<img src="img/lsc.jpg"/>
+				</div>
+			</div>
+			<div class="four_boxMin" ng-click="To_buypage()">
+				<div class="four_boxMin_left">
+					<p>七座车</p>
+					<span>功能强大</span>
+				</div>
+				<div class="four_boxMin_right">
+					<img src="img/qz.jpg"/>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
+
